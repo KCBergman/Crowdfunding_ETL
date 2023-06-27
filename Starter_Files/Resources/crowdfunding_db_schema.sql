@@ -1,4 +1,25 @@
-﻿CREATE TABLE "campaign" (
+﻿
+
+-- Database: crowdfunding_db
+
+-- DROP DATABASE IF EXISTS crowdfunding_db;
+
+CREATE DATABASE crowdfunding_db
+    WITH
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    LC_COLLATE = 'C'
+    LC_CTYPE = 'C'
+    TABLESPACE = pg_default
+    CONNECTION LIMIT = -1
+    IS_TEMPLATE = False;
+
+COMMENT ON DATABASE crowdfunding_db
+    IS 'project 2
+';
+
+
+CREATE TABLE "campaign" (
     "cf_id" int   NOT NULL,
     "contact_id" int   NOT NULL,
     "company_name" varchar(100)   NOT NULL,
