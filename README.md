@@ -1,47 +1,32 @@
 # Crowdfunding_ETL
 
-Requirements
+In order to complete this project we divided the jupyter notebook starter code into three parts:
 
-A Category DataFrame is Created (15 points)
+1. Creating the Category and Subcategory DataFrames and exporting to .csv files
+2. Creating the Campaign DataFrame and exporting to a .csv file
+3. Creating the Contacts DataFrame and exporting to a .csv file
 
-The DataFrame contains a "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories (5 points)
-The DataFrame has a "category" column that contains only the category titles (5 points)
-The category DataFrame is exported as category.csv (5 points)
-A Subcategory DataFrame is Created (15 points)
+We decided that Joanna would complete point 1, Kendal would complete point 2, and Aaron would complete point 3. However, we each ended up working through the entire starter code in jupyter notebook on our own. This is because of a miscommunication on Kendal's part (it was not clear that the three notebooks in the repo -- one per person -- were actually all identical). 
 
-The DataFrame contains a "subcategory_id" column that has entries going sequentially from "subcat1" to "subcatn", where n is the number of unique subcategories (5 points)
-The DataFrame contains a "subcategory" column that contains only the subcategory titles (5 points)
-The subcategory DataFrame is exported as subcategory.csv (5 points)
-A Campaign DataFrame is Created (30 points)
+In the end we worked through each of our versions of the jupyter notebook together in class on Monday, June 26, and the finished code in the repo reflects this. 
 
-The DataFrame has the following columns: (25 points)
-A "cf_id" column
-A "contact_id" column
-A "company_name" column
-A "description" column
-A "goal" column that is a float data type
-A "pledged" column that is a float data type
-An "outcome" column
-A "backers_count" column
-A "country" column
-A "currency" column
-A "launch_date" with the time formatted as "YYYY-MM-DD"
-An "end_date" with the time formatted as "YYYY-MM-DD"
-A "category_id" column that contains the unique identification numbers matching those in the "category_id" column of the category DataFrame
-A "subcategory_id" column that contains the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
-The campaign DataFrame is exported as campaign.csv (5 points)
-A Contacts DataFrame is Created (15 points)
+Below is an explanation of which files in our repo correspond to the different requirements for this project. 
 
-The DataFrame has the following columns: (10 points)
-A "contact_id" column
-A "first_name" column
-A "last_name" column
-An "email" column
-The contacts DataFrame is exported as contacts.csv (5 points)
-A Crowdfunding Database is Created (25 points)
+Requirements - from Bootcamp Spot
 
-A database schema labeled, crowdfunding_db_schema.sql is created (5 points)
-A crowdfunding_db is created using the crowdfunding_db_schema.sql file (5 points)
-The database has the appropriate primary and foreign keys and relationships (5 points)
-Each CSV file is imported into the appropriate table without errors (5 points)
-The data from each table is displayed using a SELECT * statement (5 points)
+A Category DataFrame is Created (15 points) -- jupyter notebook (ETL_Mini_Project_AOtto_JDelaune_KBergman.ipynb) & category.csv file
+
+A Subcategory DataFrame is Created (15 points) -- jupyter notebook (ETL_Mini_Project_AOtto_JDelaune_KBergman.ipynb) & subcategory.csv file
+
+A Campaign DataFrame is Created (30 points) -- jupyter notebook (ETL_Mini_Project_AOtto_JDelaune_KBergman.ipynb) & campaign.csv file
+
+A Contacts DataFrame is Created (15 points) -- jupyter notebook (ETL_Mini_Project_AOtto_JDelaune_KBergman.ipynb) & contacts.csv file
+
+A Crowdfunding Database is Created (25 points) -- screenshots of our postgres database, our crowdfunding_db_schema.sql file, our ERD (crowdfunding_db.jpg)
+
+A database schema labeled, crowdfunding_db_schema.sql is created (5 points) -- crowdfunding_db_schema.sql file
+A crowdfunding_db is created using the crowdfunding_db_schema.sql file (5 points) -- see screenshots in resources file
+The database has the appropriate primary and foreign keys and relationships (5 points) -- ERD (crowdfunding_db.jpg)
+Each CSV file is imported into the appropriate table without errors (5 points) -- screenshots 
+The data from each table is displayed using a SELECT * statement (5 points) -- screenshots
+
